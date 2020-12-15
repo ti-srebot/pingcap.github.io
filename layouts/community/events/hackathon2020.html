@@ -105,9 +105,7 @@
 				<p class="schedule__detail {{ if $i.align_left }}align-left{{ end }}">
 					{{ $i.detail }}
 				</p>
-				{{- if $i.detail_note -}}
-					<p class="schedule__detail align-left">{{ $i.detail_note }}</p>
-				{{- end -}}
+				<p class="schedule__detail">{{ $i.detail_note }}</p>
 				{{- if $i.btn_link -}}
 					<a class="btn uppercase" href="{{ $i.btn_link }}" target="_blank" rel="noopener noreferrer">{{ $i.btn_text }}</a>
 				{{- else -}}
